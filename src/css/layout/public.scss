@@ -1,0 +1,16 @@
+$color-black-title:rgba(0, 0, 0, .87);
+$color-black-text:rgba(0, 0, 0, .54);
+$color-logo:rgb(237, 195, 129);
+@mixin imgbox-animate() {
+    overflow: hidden;
+    transition: .5s;
+    img {
+        transition: .5s;
+    }
+    &:hover {
+        img {
+            transform: scale3d(1.5, 1.5, 1.5);
+        }
+        box-shadow: 0 0 5px #000;
+    }
+}

@@ -1,0 +1,41 @@
+<div class="tools">
+    <span class="go-top" id="go-top"><i class="fa fa-long-arrow-up"></i></span>
+    <span class="show-qrcode"><i class="fa fa-qrcode"></i></span>
+    <div class="qrcode">
+        <img src="../images/qrcode.png"  alt="二维码">
+    </div>
+</div>
+
+<script>
+    (function(){
+        // 回到顶部按钮
+        var goTop = document.getElementById('go-top');
+        goTop.addEventListener('click',function(){
+            window.scrollTo(0,0);
+            goTop.style.display = 'none';
+        })
+
+        // 显示隐藏回到顶部
+        function toggleGoTop(){
+            if(window.scrollY>500){
+                goTop.style.display = 'block'
+            }else{
+                goTop.style.display = 'none'
+            }
+        }
+
+        // 混动页面，显示隐藏工具条
+        var isScrolling =false;
+        window.addEventListener('scroll',function(){
+            if (!isScrolling) {
+                isScrolling=true;
+                setTimeout(function(){
+                    toggleGoTop();
+                    isScrolling = false;
+                },300)
+            }
+        })
+
+        toggleGoTop();
+    })()
+</script>

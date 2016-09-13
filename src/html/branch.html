@@ -1,0 +1,47 @@
+{% extends './layout/default.html' %}
+
+{% block title %}分会架构{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="../css/branch.css">
+{% endblock %}
+
+{% block main%}
+<div class="con con-title">
+    <h1>分会架构</h1>
+    <p>金英会在专业交流平台基础上设有分会组织,也是专业化程度集聚的组织体系。</p>
+</div>
+
+<div class="con branch-pic">
+    <ul>
+        <li class="imgbox wow zoomIn">
+            <img src="../images/branch1.jpg" alt="">
+            <div class="text" >
+                <p class="t1">中山区文化馆</p>
+                <p class="t2">大连市中山区春生街15号</p>
+                <p class="t3">0411-82713008</p>
+            </div>
+        </li>
+        <li class="imgbox wow zoomIn" data-wow-delay=".3s">
+            <img src="../images/branch2.jpg" alt="">
+            <div class="text">
+                <p class="t1">中山区文化馆</p>
+                <p class="t2">大连市中山区春生街15号</p>
+                <p class="t3">0411-82713008</p>
+            </div>
+        </li>
+        <li class="imgbox wow zoomIn" data-wow-delay=".6s">
+            <img src="../images/branch3.jpg" alt="">
+            <div class="text">
+                <p class="t1">中山区文化馆</p>
+                <p class="t2">大连市中山区春生街15号</p>
+                <p class="t3">0411-82713008</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    <!--合作伙伴-->
+    {% include "./layout/cooperation.html"%}
+
+{% endblock %}

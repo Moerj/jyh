@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>金英会 - {% block title %}{% endblock %}</title>
+        <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        {% block css %}{% endblock %}
+    </head>
+    <body>
+        {% include "./header.html" %}
+        {% block main %}{% endblock %}
+        {% include "./tools.html"%}
+        {% include "./footer.html" %}
+    </body>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    {% block javascript %}{% endblock %}
+</html>

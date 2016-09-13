@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>金英会 - 分会架构</title>
+        <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        
+    <link rel="stylesheet" href="../css/branch.css">
+
+    </head>
+    <body>
+        <div class="header">
+    <span class="logo"></span>
+    <ul class="nav-1">
+        <li><a href="./index.html">首页</a></li>
+        <li>
+            <a href="#">社群</a>
+            <!--二级菜单-->
+            <ul class="nav-2">
+                <li><a href="./activity.html">活动</a></li>
+                <li><a href="./branch.html">分会架构</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="./capital.html">资本</a>
+            <!--二级菜单-->
+            <ul class="nav-2">
+                <li><a href="#">二级菜单</a></li>
+                <li><a href="#">二级菜单</a></li>
+            </ul>
+        </li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+</div>
+        
+<div class="con con-title">
+    <h1>分会架构</h1>
+    <p>金英会在专业交流平台基础上设有分会组织,也是专业化程度集聚的组织体系。</p>
+</div>
+
+<div class="con branch-pic">
+    <ul>
+        <li class="imgbox wow zoomIn">
+            <img src="../images/branch1.jpg" alt="">
+            <div class="text" >
+                <p class="t1">中山区文化馆</p>
+                <p class="t2">大连市中山区春生街15号</p>
+                <p class="t3">0411-82713008</p>
+            </div>
+        </li>
+        <li class="imgbox wow zoomIn" data-wow-delay=".3s">
+            <img src="../images/branch2.jpg" alt="">
+            <div class="text">
+                <p class="t1">中山区文化馆</p>
+                <p class="t2">大连市中山区春生街15号</p>
+                <p class="t3">0411-82713008</p>
+            </div>
+        </li>
+        <li class="imgbox wow zoomIn" data-wow-delay=".6s">
+            <img src="../images/branch3.jpg" alt="">
+            <div class="text">
+                <p class="t1">中山区文化馆</p>
+                <p class="t2">大连市中山区春生街15号</p>
+                <p class="t3">0411-82713008</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    <!--合作伙伴-->
+    <div class="con-cp wow fadeIn">
+    <p>合作伙伴</p>
+    <ul>
+        <li><img src="../images/cp/1@2x.png" alt=""></li>
+        <li><img src="../images/cp/2@2x.png" alt=""></li>
+        <li><img src="../images/cp/3@2x.png" alt=""></li>
+        <li><img src="../images/cp/4@2x.png" alt=""></li>
+        <li><img src="../images/cp/5@2x.png" alt=""></li>
+        <li><img src="../images/cp/6@2x.png" alt=""></li>
+    </ul>
+</div>
+
+
+        <div class="tools">
+    <span class="go-top" id="go-top"><i class="fa fa-long-arrow-up"></i></span>
+    <span class="show-qrcode"><i class="fa fa-qrcode"></i></span>
+    <div class="qrcode">
+        <img src="../images/qrcode.png"  alt="二维码">
+    </div>
+</div>
+
+<script>
+    (function(){
+        // 回到顶部按钮
+        var goTop = document.getElementById('go-top');
+        goTop.addEventListener('click',function(){
+            window.scrollTo(0,0);
+            goTop.style.display = 'none';
+        })
+
+        // 显示隐藏回到顶部
+        function toggleGoTop(){
+            if(window.scrollY>500){
+                goTop.style.display = 'block'
+            }else{
+                goTop.style.display = 'none'
+            }
+        }
+
+        // 混动页面，显示隐藏工具条
+        var isScrolling =false;
+        window.addEventListener('scroll',function(){
+            if (!isScrolling) {
+                isScrolling=true;
+                setTimeout(function(){
+                    toggleGoTop();
+                    isScrolling = false;
+                },300)
+            }
+        })
+
+        toggleGoTop();
+    })()
+</script>
+        <div class="footer">
+    Copyright © 2016 Makrrr Inc. All rights reserved.
+</div>
+    </body>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
+</html>
