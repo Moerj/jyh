@@ -1,0 +1,41 @@
+{% extends './layout/default.html' %}
+
+{% block title %}资本{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="../css/capital.css">
+{% endblock %}
+
+{% block main%}
+<div class="con con-title">
+    <h1>资本</h1>
+    <p>金英会在专业交流平台基础上设有分会组织,也是专业化程度集聚的组织体系。</p>
+</div>
+
+<div class="con-pic">
+    <ul>
+        <li class="imgbox">
+            <a href="#">
+                <img src="../images/zb1.jpg" alt="">
+                <p class="title">资金</p>
+            </a>
+        </li>
+        <li class="imgbox">
+            <a href="#">
+                <img src="../images/zb2.jpg" alt="">
+                <p class="title">投行</p>
+            </a>
+        </li>
+        <li class="imgbox">
+            <a href="#">
+                <img src="../images/zb3.jpg" alt="">
+                <p class="title">咨询</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <!--合作伙伴-->
+    {% include "./layout/cooperation.html"%}
+
+{% endblock %}

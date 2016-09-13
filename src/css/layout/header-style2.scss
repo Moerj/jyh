@@ -1,0 +1,17 @@
+// 改变header透明
+.header {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), transparent) !important;
+    .logo{
+        background-image: url(../images/logo.png);
+    }
+    .nav-1 {
+        margin: 0;
+        >li>a {
+            color: #fff !important;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.branch-pic {
+  text-align: center;
+  margin-bottom: 100px; }
+  .branch-pic img {
+    width: 100%; }
+  .branch-pic .imgbox {
+    width: 384px;
+    height: 384px;
+    display: inline-block;
+    margin-right: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s; }
+    .branch-pic .imgbox img {
+      transition: .5s; }
+    .branch-pic .imgbox:hover {
+      box-shadow: 0 0 5px #000; }
+      .branch-pic .imgbox:hover img {
+        transform: scale3d(1.5, 1.5, 1.5); }
+    .branch-pic .imgbox:last-of-type {
+      margin-right: 0; }
+    .branch-pic .imgbox:hover .text {
+      background: rgba(0, 0, 0, 0.5); }
+    .branch-pic .imgbox .text {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #fff;
+      font-size: 14px;
+      transition: .5s;
+      line-height: 2.5; }
+      .branch-pic .imgbox .text .t1 {
+        font-size: 18px; }
+
+/*# sourceMappingURL=branch.css.map */

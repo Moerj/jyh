@@ -1,0 +1,71 @@
+{% extends './layout/default.html' %}
+
+{% block title %}首页{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="../css/index.css">
+{% endblock %}
+
+{% block main%}
+    <!--首页横幅-->
+    <div class="con1" style="background-image: url(../images/home1.jpg);">
+        <div class="con banner">
+            <div class="center-vertical text">
+                <p class="t1 wow fadeInLeft">金英会</p>
+                <p class="t2 wow fadeInLeft" data-wow-delay=".3s">金融垂直领域专业社群</p>
+            </div>
+        </div>
+    </div>
+
+    <!--关于金英会-->
+    <div class="con con2">
+        <div class="left">
+            <h1 class="wow fadeInLeft">关于金英会</h1>
+            <p class="t2 wow fadeInLeft" data-wow-delay=".3s">金英会是金融垂直领域专业社群，成立于2013年，为金融精英圈层打造互信、可靠、共赢的金融生态圈。如今，金英会网聚了4000余名金融从业人士，活跃在全国投融资第一线，通过社群力量，建立了行业内个人信用体系，助力会员的个人成长和协同发展。</p>
+        </div>
+        <div class="right wow fadeInRight">
+            <img src="../images/home-con2.jpg" alt="数据统计">
+        </div>
+    </div>
+
+    <!--卡片列表-->
+    <div class="con con3">
+        <ul>
+            <li>
+                <div class="imgbox wow zoomIn">
+                    <img src="../images/home-temp1.jpg" alt=""/>
+                </div>
+                <p>WE会员</p>
+                <span>你可以参加各种活动，享受会员优惠，并使用我们的应用于全球超过50.000位会员交流。包括每月2个在流动办工作地点预定空间的配额并按需购买更多的配额。</span>
+            </li>
+            <li>
+                <div class="imgbox wow zoomIn" data-wow-delay=".3s">
+                    <img src="../images/home-temp2.jpg" alt=""/>
+                </div>
+                <p>WE会员</p>
+                <span>你可以参加各种活动，享受会员优惠，并使用我们的应用于全球超过50.000位会员交流。包括每月2个在流动办工作地点预定空间的配额并按需购买更多的配额。</span>
+            </li>
+            <li>
+                <div class="imgbox wow zoomIn" data-wow-delay=".6s">
+                    <img src="../images/home-temp3.jpg" alt=""/>
+                </div>
+                <p>WE会员</p>
+                <span>你可以参加各种活动，享受会员优惠，并使用我们的应用于全球超过50.000位会员交流。包括每月2个在流动办工作地点预定空间的配额并按需购买更多的配额。</span>
+            </li>
+            <li>
+                <div class="imgbox wow zoomIn" data-wow-delay=".9s">
+                    <img src="../images/home-temp1.jpg" alt=""/>
+                </div>
+                <p>WE会员</p>
+                <span>你可以参加各种活动，享受会员优惠，并使用我们的应用于全球超过50.000位会员交流。包括每月2个在流动办工作地点预定空间的配额并按需购买更多的配额。</span>
+            </li>
+        </ul>
+    </div>
+
+
+    {% include "./layout/cooperation.html"%}
+{% endblock %}
+
+{% block javascript%}
+    <!--<script src="../js/index.js" charset="utf-8"></script>-->
+{% endblock %}
