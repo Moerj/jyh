@@ -1,0 +1,6 @@
+{
+  "name": "Jyh",
+  "tagline": "金英会网站",
+  "body": "## 金英会\r\n\r\n### 项目结构\r\n- dist/ 运行目录\r\n- src/ 源码\r\n\r\n### 运行\r\n- 安装nodejs\r\n- cnpm i\r\n- gulp\r\n\r\n### 项目首页\r\ndist/html/index.html\r\n\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
