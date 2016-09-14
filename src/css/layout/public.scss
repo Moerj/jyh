@@ -1,6 +1,8 @@
 $color-black-title:rgba(0, 0, 0, .87);
 $color-black-text:rgba(0, 0, 0, .54);
 $color-logo:rgb(237, 195, 129);
+
+// 图片框hover动画
 @mixin imgbox-animate($scale:1.5) {
     overflow: hidden;
     transition: .5s;
@@ -16,6 +18,7 @@ $color-logo:rgb(237, 195, 129);
     }
 }
 
+// css三角形
 @mixin triangle-right($size:8px, $color:#fff) {
     content: '';
     width: 0;

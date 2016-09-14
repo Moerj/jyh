@@ -1,37 +1,95 @@
 @import './layout/public.scss';
-.activityDetatils{
-    width: 1200px;
+.activityDetatils {
+    max-width: 1200px;
     margin: 0 auto;
-    >.title{
+    >.title {
         font-size: 48px;
-        color:$color-black-title;
+        color: $color-black-title;
         margin-top: 100px;
         margin-bottom: 40px;
     }
-    >.text{
+    >.text {
         white-space: pre-line;
-        color:rgba($color: black, $alpha: .54);
+        color: rgba($color: black, $alpha: .54);
         font-size: 18px;
         line-height: 30px;
         margin-top: -40px;
     }
-    .data{
+    .data {
         display: inline-block;
         width: 100%;
-        >*{
+        >* {
             float: left;
             box-sizing: border-box;
             width: (100% / 6);
             height: 62px;
         }
-        &::after{
+        &::after {
             clear: both;
         }
     }
-    .tipInfo{
+    .tipInfo {
         font-size: 12px;
-        color:rgba($color: black, $alpha: .54);
+        color: rgba($color: black, $alpha: .54);
         margin-top: 16px;
         margin-bottom: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        ul {
+            display: none !important;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        display: none !important;
+    }
+    .tools {
+        display: none !important;
+    }
+    .activityDetatils {
+        width: 100% !important;
+        padding: 0 15px;
+        width: 600px;
+        .title {
+            font-size: 1.2rem;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        .text {
+            font-size: 1rem;
+            margin-top: 0;
+        }
+        .tipInfo {
+            display: none;
+        }
+        .data {
+            text-align: center;
+            >* {
+                width: 98%;
+                display: block;
+                margin: 0 auto;
+                font-size: 1rem;
+            }
+            input {
+                border: 0;
+                border-bottom: 1px #ddd solid;
+                &:focus {
+                    box-shadow: none;
+                }
+                height: 56px;
+            }
+            .btn{
+                margin-bottom: 16px;
+                margin-top: 16px;
+                background: rgb(236,188,113);
+                height: 48px;
+            }
+        }
     }
 }
