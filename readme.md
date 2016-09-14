@@ -9,7 +9,7 @@ https://moerj.github.io/jyh/html/index.html
 
 ### 运行
 - 安装nodejs
-- cnpm i
+- cnpm install
 - gulp
 
 ### 项目首页
