@@ -29,11 +29,15 @@
     margin-bottom: 300px; }
 
 @media (max-width: 992px) {
-  .header ul {
-    display: none !important; }
-  .header .logo {
-    display: block;
-    margin: 0 auto; }
+  .header {
+    text-align: center; }
+    .header ul {
+      display: none !important; }
+    .header .logo {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      left: 0; }
   .footer {
     display: none !important; }
   .tools {
