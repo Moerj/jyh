@@ -1,0 +1,26 @@
+.callus .userInfo {
+  display: block;
+  margin: 0 auto;
+  width: 588px; }
+  .callus .userInfo > * {
+    display: block;
+    height: 62px;
+    line-height: 62px;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 8px; }
+  .callus .userInfo > *:last-of-type {
+    margin-bottom: 40px; }
+
+.callus .address {
+  line-height: 2;
+  margin-bottom: 250px; }
+  .callus .address > p {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54); }
+    .callus .address > p b {
+      color: rgba(0, 0, 0, 0.87);
+      font-weight: 600; }
+
+/*# sourceMappingURL=callus.css.map */

@@ -1,6 +1,28 @@
 html {
   font-family: 'PingFangSC-Regular'; }
 
+* {
+  box-sizing: border-box; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
+input,
+textarea {
+  outline: none;
+  transition: .5s;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  padding-left: 16px; }
+  input:focus,
+  textarea:focus {
+    border-color: lightskyblue;
+    box-shadow: 0 0 3px dodgerblue; }
+
 ul {
   margin: 0;
   padding: 0; }
@@ -14,6 +36,7 @@ a {
 .btn {
   display: inline-block;
   border-radius: 4px;
+  border: 0;
   width: 180px;
   height: 46px;
   line-height: 46px;
@@ -21,9 +44,14 @@ a {
   background-color: #edc381;
   text-align: center;
   font-size: 14px;
-  font-family: 'PingFangSC-Medium'; }
+  font-family: 'PingFangSC-Medium';
+  cursor: pointer;
+  transition: .3s;
+  outline: none; }
   .btn:hover {
-    background-color: #f5be68; }
+    background-color: mediumseagreen; }
+  .btn:active {
+    font-size: 20px; }
 
 .con {
   max-width: 1440px;
@@ -105,20 +133,35 @@ a {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
       .header .nav-1 .nav-2::before {
         content: '';
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-bottom: 9px solid #e6e6e6;
         position: absolute;
-        top: -8px;
-        left: 20px;
+        top: -10px;
+        left: 19px;
+        z-index: 1; }
+      .header .nav-1 .nav-2::after {
+        content: '';
+        content: '';
         width: 0;
         height: 0;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
-        border-bottom: 8px solid #fff; }
+        border-bottom: 8px solid #fff;
+        position: absolute;
+        top: -8px;
+        left: 20px;
+        z-index: 2; }
       .header .nav-1 .nav-2 > li {
         width: 96px;
         height: 38px;
         line-height: 38px;
         margin: 0 auto;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        z-index: 10; }
         .header .nav-1 .nav-2 > li a {
           display: inline-block;
           width: 100%;

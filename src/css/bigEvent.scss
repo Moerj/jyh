@@ -1,0 +1,72 @@
+@import './layout/public.scss';
+.bigEvent {
+    width: 810px;
+    display: block;
+    margin: 0 auto;
+    .timeline {
+        position: relative;
+        height: 168px;
+        &:last-of-type{
+            .line{
+                background: transparent;
+            }
+        }
+        >* {
+            position: absolute;
+        }
+        .time {
+            left: 0;
+            top: 0;
+            color:rgba($color: black, $alpha: .87);
+        }
+        .line {
+            left: 150px;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: rgba($color: black, $alpha: .38);
+            &::before {
+                content: '';
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                border: solid 4px rgba($color: black, $alpha: .24);
+                box-sizing: border-box;
+                background: #fff;
+                position: absolute;
+                top: 0;
+                left: -10px;
+            }
+        }
+        .imgbox {
+            left: 223px;
+            top: 0;
+            width: 180px;
+            height: 135px;
+            @include imgbox-animate();
+            background: #ddd;
+        }
+        .msg {
+            left: 418px;
+            top: 0;
+            .title {
+                font-size: 18px;
+                color: $color-black-title;
+                margin-bottom: 8px;
+            }
+            .text {
+                width: 384px;
+                font-size: 14px;
+                color: $color-black-text;
+                line-height: 26px;
+            }
+        }
+    }
+    .active{
+        .line{
+            &::before{
+                border-color:rgb(236, 188, 113)
+            }
+        }
+    }
+}

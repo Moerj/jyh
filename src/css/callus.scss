@@ -1,0 +1,33 @@
+@import './layout/public.scss';
+
+.callus{
+    .userInfo{
+        display: block;
+        margin: 0 auto;
+        width: 588px;
+        >*{
+            display: block;
+            height: 62px;
+            line-height: 62px;
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        >*:last-of-type{
+            margin-bottom: 40px;
+        }
+    }
+    .address{
+        line-height: 2;
+        margin-bottom: 250px;
+        >p{
+            text-align: center;
+            font-size: 14px;
+            color: $color-black-text;
+            b{
+                color:$color-black-title;
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.activityDetatils {
+  width: 1200px;
+  margin: 0 auto; }
+  .activityDetatils > .title {
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 100px;
+    margin-bottom: 40px; }
+  .activityDetatils > .text {
+    white-space: pre-line;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: -40px; }
+  .activityDetatils .data {
+    display: inline-block;
+    width: 100%; }
+    .activityDetatils .data > * {
+      float: left;
+      box-sizing: border-box;
+      width: 16.66667%;
+      height: 62px; }
+    .activityDetatils .data::after {
+      clear: both; }
+  .activityDetatils .tipInfo {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.54);
+    margin-top: 16px;
+    margin-bottom: 300px; }
+
+/*# sourceMappingURL=activityDetails.css.map */

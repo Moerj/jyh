@@ -1,0 +1,77 @@
+{% extends './layout/default.html' %}
+
+{% block title %}活动{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="../css/bigEvent.css">
+{% endblock %}
+
+{% block main%}
+<div class="bigEvent con">
+    <div class="con-title">
+        <h1>大事件</h1>
+        <p>金英会在专业交流平台基础上设有分会组织,也是专业化程度集聚的组织体系。</p>
+    </div>
+
+    <!-- 每个timeline 为一个时间线块 ，带有active得小圆圈为黄色 -->
+    <!--  data-wow-delay="?s" 为动画延迟时间 -->
+    <div class="timeline active wow fadeInUp">
+        <span class="time">2016/09/01</span>
+        <i class="line"></i>
+        <div class="imgbox">
+            <img src="../images/branch1.jpg" alt="">
+        </div>
+        <a href="#" class="msg">
+            <p class="title">崔健三十年工人体育场演唱会 </p>
+            <p class="text">1986年的那个春天，在各种文化思潮的压抑与碰撞之间，即将发生真正的裂变。《朦胧诗》在大学更加流行，三毛和琼瑶带来了另一种文艺与情感...</p>
+        </a>
+    </div>
+    <div class="timeline wow fadeInUp">
+        <span class="time">2016/09/01</span>
+        <i class="line"></i>
+        <div class="imgbox">
+            <img src="../images/branch2.jpg" alt="">
+        </div>
+        <a href="#" class="msg">
+            <p class="title">崔健三十年工人体育场演唱会 </p>
+            <p class="text">1986年的那个春天，在各种文化思潮的压抑与碰撞之间，即将发生真正的裂变。《朦胧诗》在大学更加流行，三毛和琼瑶带来了另一种文艺与情感...</p>
+        </a>
+    </div>
+    <div class="timeline wow fadeInUp">
+        <span class="time">2016/09/01</span>
+        <i class="line"></i>
+        <div class="imgbox">
+            <img src="../images/branch3.jpg" alt="">
+        </div>
+        <a href="#" class="msg">
+            <p class="title">崔健三十年工人体育场演唱会 </p>
+            <p class="text">1986年的那个春天，在各种文化思潮的压抑与碰撞之间，即将发生真正的裂变。《朦胧诗》在大学更加流行，三毛和琼瑶带来了另一种文艺与情感...</p>
+        </a>
+    </div>
+    <div class="timeline wow fadeInUp">
+        <span class="time">2016/09/01</span>
+        <i class="line"></i>
+        <div class="imgbox">
+            <img src="../images/zb2.jpg" alt="">
+        </div>
+        <a href="#" class="msg">
+            <p class="title">崔健三十年工人体育场演唱会 </p>
+            <p class="text">1986年的那个春天，在各种文化思潮的压抑与碰撞之间，即将发生真正的裂变。《朦胧诗》在大学更加流行，三毛和琼瑶带来了另一种文艺与情感...</p>
+        </a>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block javascript %}
+<script>
+    (function(){
+        // 给每个time依次增加动画延迟
+        var timeline = document.getElementsByClassName('timeline');
+        for (var i = 1; i < timeline.length; i++) {
+            timeline[i].setAttribute('data-wow-delay', i*0.3 + 's');
+        }
+    })()
+</script>
+{% endblock %}

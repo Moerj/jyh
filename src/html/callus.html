@@ -1,0 +1,43 @@
+{% extends './layout/default.html' %}
+
+{% block title %}活动{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="../css/callus.css">
+{% endblock %}
+
+{% block main%}
+<div class="callus con">
+    <div class="con-title">
+        <h1>联系我们</h1>
+        <p>金英会在专业交流平台基础上设有分会组织,也是专业化程度集聚的组织体系。</p>
+    </div>
+
+    <form class="userInfo">
+        <input type="text" name="" value="" placeholder="姓名">
+        <input type="number" name="" value="" placeholder="手机号">
+        <button type="button" class="btn">确认</button>
+    </form>
+
+    <div class="address">
+        <p><b>A:</b> 北京朝阳区朝外大街乙12号3号楼2506</p>
+        <p><b>M:</b> 010-59251267</p>
+        <p><b>E:</b> biz@taimung.com</p>
+        <p><b>微信:</b> jinyinghui2506 (金英会小秘书)</p>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block javascript %}
+<script>
+    (function(){
+        // 给每个time依次增加动画延迟
+        var timeline = document.getElementsByClassName('timeline');
+        for (var i = 1; i < timeline.length; i++) {
+            timeline[i].setAttribute('data-wow-delay', i*0.3 + 's');
+        }
+    })()
+</script>
+{% endblock %}

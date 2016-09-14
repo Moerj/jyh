@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>金英会 - 分会架构</title>
+        <title>金英会 - 活动</title>
         <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
         <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/reset.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         
-    <link rel="stylesheet" href="../css/branch.css">
+    <link rel="stylesheet" href="../css/callus.css">
 
     </head>
     <body>
@@ -45,52 +45,26 @@
     </ul>
 </div>
         
-<div class="con con-title">
-    <h1>分会架构</h1>
-    <p>金英会在专业交流平台基础上设有分会组织,也是专业化程度集聚的组织体系。</p>
+<div class="callus con">
+    <div class="con-title">
+        <h1>联系我们</h1>
+        <p>金英会在专业交流平台基础上设有分会组织,也是专业化程度集聚的组织体系。</p>
+    </div>
+
+    <form class="userInfo">
+        <input type="text" name="" value="" placeholder="姓名">
+        <input type="number" name="" value="" placeholder="手机号">
+        <button type="button" class="btn">确认</button>
+    </form>
+
+    <div class="address">
+        <p><b>A:</b> 北京朝阳区朝外大街乙12号3号楼2506</p>
+        <p><b>M:</b> 010-59251267</p>
+        <p><b>E:</b> biz@taimung.com</p>
+        <p><b>微信:</b> jinyinghui2506 (金英会小秘书)</p>
+    </div>
 </div>
 
-<div class="con branch-pic">
-    <ul>
-        <li class="imgbox wow zoomIn">
-            <img src="../images/branch1.jpg" alt="">
-            <div class="text" >
-                <p class="t1">中山区文化馆</p>
-                <p class="t2">大连市中山区春生街15号</p>
-                <p class="t3">0411-82713008</p>
-            </div>
-        </li>
-        <li class="imgbox wow zoomIn" data-wow-delay=".3s">
-            <img src="../images/branch2.jpg" alt="">
-            <div class="text">
-                <p class="t1">中山区文化馆</p>
-                <p class="t2">大连市中山区春生街15号</p>
-                <p class="t3">0411-82713008</p>
-            </div>
-        </li>
-        <li class="imgbox wow zoomIn" data-wow-delay=".6s">
-            <img src="../images/branch3.jpg" alt="">
-            <div class="text">
-                <p class="t1">中山区文化馆</p>
-                <p class="t2">大连市中山区春生街15号</p>
-                <p class="t3">0411-82713008</p>
-            </div>
-        </li>
-    </ul>
-</div>
-
-    <!--合作伙伴-->
-    <div class="con-cp wow fadeIn">
-    <p>合作伙伴</p>
-    <ul>
-        <li><img src="../images/cp/1@2x.png" alt=""></li>
-        <li><img src="../images/cp/2@2x.png" alt=""></li>
-        <li><img src="../images/cp/3@2x.png" alt=""></li>
-        <li><img src="../images/cp/4@2x.png" alt=""></li>
-        <li><img src="../images/cp/5@2x.png" alt=""></li>
-        <li><img src="../images/cp/6@2x.png" alt=""></li>
-    </ul>
-</div>
 
 
         <div class="tools">
@@ -143,4 +117,14 @@
         new WOW().init();
     </script>
     
+<script>
+    (function(){
+        // 给每个time依次增加动画延迟
+        var timeline = document.getElementsByClassName('timeline');
+        for (var i = 1; i < timeline.length; i++) {
+            timeline[i].setAttribute('data-wow-delay', i*0.3 + 's');
+        }
+    })()
+</script>
+
 </html>
