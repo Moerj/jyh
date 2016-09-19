@@ -1,7 +1,7 @@
 ## 金英会
 
 ### demo
-https://moerj.github.io/jyh/html/index.html
+https://moerj.github.io/jyh/dist/html/index.html
 
 ### 项目结构
 - dist/ 运行目录
