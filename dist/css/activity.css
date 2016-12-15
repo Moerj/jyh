@@ -6,6 +6,8 @@
     height: 450px;
     float: left;
     box-sizing: border-box; }
+    .activity-banner .box img {
+      height: 100%; }
   .activity-banner .msg {
     padding-top: 105px;
     padding-left: 120px;
@@ -81,6 +83,8 @@
         box-shadow: 0 0 5px #000; }
         .review .card .imgbox:hover img {
           transform: scale3d(1.5, 1.5, 1.5); }
+      .review .card .imgbox img {
+        height: 100%; }
     .review .card .msg p {
       padding: 24px 16px 0;
       text-align: left;
