@@ -37,3 +37,14 @@ $color-logo:rgb(237, 195, 129);
     border-bottom: $size solid $color;
     position: absolute;
 }
+
+// 文本溢出样式，clamp到多少行溢出时显示缩略字符
+@mixin text-clamp($clamp:1) {
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: $clamp;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
