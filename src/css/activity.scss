@@ -2,7 +2,6 @@
 .activity-banner {
     $bannerHeight: 450px;
     $bgColor: rgb(247, 247, 247);
-    // height: $bannerHeight;
     background-color: $bgColor;
     margin-bottom: 100px;
     .box {
@@ -17,17 +16,20 @@
     .msg {
         padding-top: 105px;
         padding-left: 120px;
+        padding-right: 60px;
         background-color: $bgColor;
     }
     .time {
         margin-right: 14px;
     }
     .title1 {
-        font-size: 48px;
+        font-size: 28px;
         color: $color-black-title;
-        width: 486px;
+        // width: 486px;
         margin-top: 19px;
         margin-bottom: 54px;
+        line-height: 1.5;
+        @include text-clamp($clamp: 4);
     }
     .title2 {
         font-size: 14px;
@@ -62,11 +64,13 @@
     }
     .status {
         font-size: 12px;
-        padding: 2px 4px;
+        padding: 4px;
         color: #fff;
         text-align: center;
         border-radius: 4px;
-        margin-left: 10px;
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
     }
     .status-grey {
         background: rgba(0, 0, 0, .24);
@@ -91,6 +95,7 @@
         border: 1px solid #ddd;
         padding-bottom: 45px;
         transition: .3s;
+        position: relative;
         &:hover {
             box-shadow: 0 0 5px rgba(0, 0, 0, .24);
         }
@@ -111,11 +116,13 @@
             font-size: 18px;
             color: $color-black-title;
             @include text-clamp($clamp: 2);
+            height: 81px;
         }
         .text {
             font-size: 14px;
             color: $color-black-text;
             @include text-clamp($clamp: 2);
+            height: 84px;
         }
         .title2 {
             font-size: 14px;

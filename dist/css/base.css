@@ -1,5 +1,6 @@
+@charset "UTF-8";
 html, body {
-  font-family: 'PingFangSC-Regular'; }
+  font-family: 'PingFangSC-Regular','微软雅黑'; }
 
 * {
   box-sizing: border-box; }

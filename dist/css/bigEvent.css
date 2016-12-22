@@ -39,8 +39,7 @@
       transition: .5s;
       background: #ddd; }
       .bigEvent .timeline .imgbox img {
-        transition: .5s;
-        width: 100%; }
+        transition: .5s; }
       .bigEvent .timeline .imgbox:hover {
         box-shadow: 0 0 5px #000; }
         .bigEvent .timeline .imgbox:hover img {
